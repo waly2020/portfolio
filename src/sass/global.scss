@@ -1,0 +1,9 @@
+.child_border{
+    & > *{
+        border: solid 1px #000;
+    }
+}
+.shadow-3d{
+    box-shadow: 0 3px 0px #aaa,
+                0 0 3px 1px #eee;
+}
