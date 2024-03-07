@@ -8,11 +8,11 @@ import ButtonNav from "./ButtonNav";
 
 const Navigation = () => {
     return (
-        <nav className="flex flex-col justify-center items-center rounded-lg gap-2 shadow-3d">
+        <nav className="flex flex-col justify-center items-center rounded-lg gap-2 shadow-3d h-[90vh] w-full">
             <ButtonNav to="/"><BsShop/></ButtonNav>
             <ButtonNav to="/about"><RiContactsLine/></ButtonNav>
             {/* Ecole et Exp */}
-            <ButtonNav to="/parcours"><LiaSchoolSolid/></ButtonNav>
+            <ButtonNav to="/course"><LiaSchoolSolid/></ButtonNav>
             <ButtonNav to="/skills"><LiaProjectDiagramSolid/></ButtonNav>
             <ButtonNav to="/portfolio"><GrProjects/></ButtonNav>
             <ButtonNav to="/contact"><MdOutlineContactPhone/></ButtonNav>

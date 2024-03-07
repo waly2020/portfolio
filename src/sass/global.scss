@@ -1,9 +1,30 @@
-.child_border{
-    & > *{
-        border: solid 1px #000;
-    }
-}
+$main_color : #1E2A5C;
+$main_black_color : #0F1635;
+$main_white_color : #2F3E7C;
+$sec_color : #FECE00;
+
 .shadow-3d{
     box-shadow: 0 3px 0px #aaa,
                 0 0 3px 1px #eee;
+}
+.nav-link{
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #f1f1f1;
+        left: 0;
+        top: 0;
+        transform: translateY(100%);
+        transition: .3s;
+    }
+    & > *{
+        position: relative;
+    }
+    &.active::before{
+        transform: translateY(0);
+    }   
 }
